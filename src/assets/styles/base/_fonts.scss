@@ -1,9 +1,51 @@
 @font-face {
-    font-family: 'is';
-    src: url('../fonts/IsaacSemiBold.eot') format('eot'),
-        url('../fonts/IsaacSemiBold.woff') format('woff');
+    font-family: 'GeoMedium';
+    src: url('../fonts/Geograph-Medium.eot');
+    src: url('../fonts/Geograph-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geograph-Medium.woff2') format('woff2'),
+        url('../fonts/Geograph-Medium.woff') format('woff'),
+        url('../fonts/Geograph-Medium.ttf') format('truetype'),
+        url('../fonts/Geograph-Medium.svg#Geograph-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GeoBold';
+    src: url('../fonts/Geograph-Bold.eot');
+    src: url('../fonts/Geograph-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geograph-Bold.woff2') format('woff2'),
+        url('../fonts/Geograph-Bold.woff') format('woff'),
+        url('../fonts/Geograph-Bold.ttf') format('truetype'),
+        url('../fonts/Geograph-Bold.svg#Geograph-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-    font-display: block;
-    // unicode-range: U+000-5FF; /* Latin glyphs */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GeoLight';
+    src: url('../fonts/Geograph-Light.eot');
+    src: url('../fonts/Geograph-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geograph-Light.woff2') format('woff2'),
+        url('../fonts/Geograph-Light.woff') format('woff'),
+        url('../fonts/Geograph-Light.ttf') format('truetype'),
+        url('../fonts/Geograph-Light.svg#Geograph-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GeoRegular';
+    src: url('../fonts/Geograph-Regular.eot');
+    src: url('../fonts/Geograph-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geograph-Regular.woff2') format('woff2'),
+        url('../fonts/Geograph-Regular.woff') format('woff'),
+        url('../fonts/Geograph-Regular.ttf') format('truetype'),
+        url('../fonts/Geograph-Regular.svg#Geograph-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }

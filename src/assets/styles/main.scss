@@ -25,7 +25,7 @@
 @import "base/screenreader";
 @import "base/focus";
 @import "base/layout";
-@import "base/loader";
+// @import "base/loader";
 
 //--------------------
 // COMPONENTS
@@ -35,3 +35,7 @@
 @import "components/nav";
 @import "components/header";
 @import "components/footer";
+@import "components/layout";
+
+
+@import "base/heredado"

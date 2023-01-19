@@ -1,0 +1,94 @@
+
+.novartis__wrapper {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+/** 
+Banner
+*/
+
+.novartis__banner {
+    width: 100%;
+    height: 2.6rem;
+    background-color: #222222;
+    position: relative;
+}
+
+.novartis__banner span {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: white;
+    font-family: GeoMedium;
+    letter-spacing: .12rem;
+}
+
+/**
+Cases
+*/
+
+.novartis__cases {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-xs);
+    padding: var(--spacing-m);
+
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.novartis__cases__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: var(--spacing-l);
+    padding-right: var(--spacing-l);
+    padding-bottom: var(--spacing-xxl);
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 0;
+    }
+}
+
+.novartis__cases__avatar {
+    width: 10rem;
+} 
+
+.novartis__cases__name {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.novartis__cases__name h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: GeoBold;
+    letter-spacing: .26rem;
+}
+.novartis__cases__name p {
+    font-weight: 300;
+    font-size: .81rem;
+    line-height: 1.1875rem;
+    letter-spacing: .05rem;
+}
+.novartis__cases__bio {
+    font-size: .81rem;
+    line-height: 1.1875rem;
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+.novartis__cases__bio p {
+    padding-bottom: 1rem;
+    font-family: GeoLight;
+}
