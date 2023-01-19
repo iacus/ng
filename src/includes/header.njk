@@ -1,10 +1,15 @@
-<header class="header" role="banner">
-    <div class="header-inner">
-        <div class="header-left">
-            🎩 {{meta.title}}
+<section class="novartis__header">
+    <section class="novartis__video">
+        <div class="novartis__video__content">
+            <video poster="./assets/images/video-frame.jpg" loading="lazy" alt="Vídeo animación Solán de Cabras" controls muted preload="auto" >
+                <source src="./assets/images/solan-cabras.mp4" type="video/mp4" >
+                <source src="./assets/images/solan-cabras.webm" type="video/webm" >
+                <source src="./assets/images/solan-cabras.m4v" type="video/m4v" >
+                Your browser does not support the video tag.
+            </video> 
+            <div class="novartis__video__content__playbtn">
+                <img src="./assets/images/player.svg" loading="lazy" alt="Play">
+            </div>
         </div>
-        <div class="header-right">
-            {% include "nav.njk" %}
-        </div>
-    </div>
-</header>
+    </section>
+</section>

@@ -1,12 +1,37 @@
-.layout {
-  min-height: 100vh;
+/**
+Nato geo pre-layout
+**/
+.headers-container {
+  width: 100vw;
+  height: 5rem;
+  background-color: rgb(255, 231, 195);
   position: relative;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
+.block-nationalgeographicfooterblock {
+  width: 100vw;
+  height: 23rem;
+  background-color: rgb(255, 231, 195);
+  position: relative;
+}
 
-  padding: 1rem;
+.placeholder {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.placeholder img {
+  width: 100%;
+}
+
+/**
+Global
+*/
+
+.novartis__wrapper {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
 }

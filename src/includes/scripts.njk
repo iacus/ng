@@ -1,0 +1,46 @@
+    <script>
+        /**
+         * Main Player Video
+        */
+        const videoPlayer = document.querySelector('video')
+        const videoPlayIcon = document.querySelector('.novartis__video__content__playbtn')
+        videoPlayer.addEventListener('play', () => {
+            videoPlayIcon.style.display = 'none'
+        })
+        videoPlayer.addEventListener('pause', () => {
+            videoPlayIcon.style.display = 'block'
+        })
+    
+
+        /**
+         * Main Player Header Video
+        */
+        let headerIsPlaying = false
+        const videoPlayerHeader = document.querySelector('.novartis-videopopup--content video')
+        const videoPlayIconHeader = document.querySelector('.fix-player')
+        videoPlayerHeader.addEventListener('play', () => {
+            videoPlayIconHeader.style.display = 'none'
+        })
+        videoPlayerHeader.addEventListener('pause', () => {
+            videoPlayIconHeader.style.display = 'block'
+        })
+
+        /**
+        Video header
+        */
+        const videoHeader = document.querySelector('#videoheader')
+        const videoPopup = document.querySelector('.novartis-videopopup')
+        const videoPopupClose = document.querySelector('.novartis-videopopup--close')
+        videoHeader.addEventListener('click', (e) => {
+            e.preventDefault()
+            videoPopup.style.display = 'block'
+        })
+        videoPopupClose.addEventListener('click', (e) => {
+            videoPopup.style.display = 'none'
+            // videoPlayIconHeader.style.display = 'block'
+            if (headerIsPlaying) {
+                headerIsPlaying = !headerIsPlaying
+            }
+            videoPlayerHeader.pause()
+        })
+    </script>

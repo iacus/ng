@@ -8,139 +8,27 @@ eleventyNavigation:
         <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
             <div class="page-content">
                 <div class="content-cntr">
-                     <div class="headers-container">
-                        <div class="placeholder"><img src="./assets/images/placeholder.png"></div>
-                    </div>
+                    {% include "headergeo.njk" %}
                     <div class="layout-cntr">
                         <div class="ng-ad-banner"></div>
                         <main role="main" id="main-content">
                             <div id="layout-content">
                                 <div>
                                     <div id="block-nationalgeographic-content">
-                                        <article data-history-node-id="40982" about="https://cms-uk.ngeo.com/thank-you" typeof="schema:WebPage" class="node node--type-page">
+                                        <article data-history-node-id="" about="" typeof="schema:WebPage" class="node node--type-page">
                                             <div id="blank-template-custom-body" class="node__cont">
-
                                                 <div class="novartis__wrapper">
-                                                    <div class="novartis__banner">
-                                                        <span>Partner Content for Novartis</span>
-                                                    </div>
-                                                    <section class="solan__header">
-                                                      <section class="solan__video">
-                                                          <div class="solan__video__content">
-                                                              <video poster="./assets/images/video-frame.jpg" loading="lazy" alt="Vídeo animación Solán de Cabras" controls muted preload="auto" >
-                                                                  <source src="./assets/images/solan-cabras.mp4" type="video/mp4" >
-                                                                  <source src="./assets/images/solan-cabras.webm" type="video/webm" >
-                                                                  <source src="./assets/images/solan-cabras.m4v" type="video/m4v" >
-                                                                  Your browser does not support the video tag.
-                                                              </video> 
-                                                              <div class="solan__video__content__playbtn">
-                                                                  <img src="./assets/images/player.svg" loading="lazy" alt="Play">
-                                                              </div>
-                                                          </div>
-                                                      </section>
-                                                    </section>
+                                                    {% include "banner.njk" %}
+                                                    {% include "header.njk" %}
                                                     {% include "cases.njk" %}
-                                                    <section class="solan__map">
-                                                        <div class="solan__map__bg">
-                                                            <picture alt="Mapa de localización geográfica">
-                                                                <source media="(min-width: 650px)" srcset="/./assets/images/map-bg.jpg" loading="lazy">
-                                                                <source media="(min-width: 650px)" srcset="/./assets/images/map-bg.webp" loading="lazy">
-                                                                <img src="/./assets/images/map-bg-mobile.jpg" loading="lazy">
-                                                                <source srcset="/./assets/images/map-bg-mobile.webp" loading="lazy">
-                                                                
-                                                            </picture>
-                                                        </div>
-                                                        <div class="solan__map__svg1"><img src="././assets/images/mapsolan.svg" loading="lazy" alt="Solán de Cabras"></div>
-                                                        <div class="solan__map__svg2"><img src="././assets/images/mapcuenca.svg" loading="lazy" alt="Parque Natural de la Serranía de Cuenca"></div>
-                                                    </section>
-                                                    <section class="solan__bigarticle" id="article">
-                                                        <article class="solan__bigarticle__content">
-                                                            <div class="solan__bigarticle__content--title">El Cauce de la vida</div>
-                                                            <div class="solan__bigarticle__content--pg">
-                                                                <p class="solan__big__article__content--fadeout">
-                                                                    Amanece en la Serranía de Cuenca y, en las cercanías de los cursos de agua, la vida despierta. Un bullir de sonidos, con el canto de las aves y el croar de las ranas como principales protagonistas. La superficie del agua en el embalse del Molino de Chincha humea por la condensación de la mañana, mientras que los ríos Cuervo y Guadiela discurren entre cascadas y vertiginosos cortados, horadados en la roca caliza. 
-                                                                    En este entorno protegido el agua es clave en la configuración del paisaje, así como en el mantenimiento de su rica biodiversidad.
-                                                                </p>
-                                                                <div class="readmore__content"> 
-                                                                    <p>Como paleontóloga y geóloga, soy plenamente consciente de que no hay vida, ni roca, sin agua. Los primeros organismos unicelulares conocidos, de los que procedemos el resto de seres vivos, aparecieron en nuestro planeta hace más de 3800 millones de años. Y se desarrollaron en el agua. Precisamente, los fósiles –restos de organismos del pasado, y de su actividad, preservados en las rocas– nos recuerdan que nuestro planeta alberga vida desde tiempos inmemoriales, y que ésta comenzó en los océanos primitivos. Así, todos los organismos que han habitado o habitan el planeta dependen del agua, en mayor o menor medida, para mantener sus funciones vitales.</p>
-                                                                    <p>Del mismo modo, me maravillan las formaciones que la propia agua ha esculpido en el entorno natural que rodea a Solán. La erosión fluvial de los ríos y arroyos ha excavado, a lo largo de millones de años, profundos cañones en la roca caliza, modelando entornos geológicos y paisajísticos tan espectaculares como la Hoz de Tragavivos o el Cañón del Río Cuervo. Incluso, en el Monumento Natural del nacimiento del río Cuervo, es posible apreciar la precipitación de carbonato y la formación –casi en vivo y en directo– de una roca calcárea, denominada toba, en la que quedan impresionados tallos y hojas de la vegetación una vez que la materia orgánica se descompone.</p>
-                                                                    <p>No obstante, escondida de nuestros ojos fluye agua bajo nuestros pies, en las entrañas de la misma tierra. Las fisuras y la porosidad de las rocas carbonatadas del entorno generan excelentes almacenes para las aguas subterráneas, dando lugar a importantes acuíferos en esta área. En contra de lo que se suele pensar, ésta no solo circula por grutas o cuevas subterráneas, sino que también lo hace a través de los intersticios y poros de unidades rocosas, donde no existen grandes cavidades. Por tanto, no debemos de imaginarnos un acuífero siempre asociado a la idea de cuevas subterráneas. En determinadas litologías, un acuífero se asemeja más a una esponja que es capaz de almacenar agua en sus poros y cederla al exterior, formando así corrientes fluviales, lagos o manantiales.</p>
-                                                                    <p>Uno de los acuíferos mejor documentados de la zona es el que almacena las aguas del manantial de Solán de Cabras, cerca de la localidad de Puente Vadillos. Existen escritos romanos que lo citan ya en el 182 a.C. El acuífero se aloja en unas calizas bioclásticas del Jurásico Inferior (201-174 millones de años) y sus aguas proceden de la infiltración de la lluvia en zonas elevadas circundantes a unos 1300 metros de altitud. Las masas de agua subterránea acumuladas en acuíferos suelen circular de forma muy lenta, de manera que pueden transcurrir miles de años desde el momento de su infiltración hasta su surgencia. Este es el caso del agua que aflora en el manantial de Solán de Cabras, cuya edad es de más de 3600 años, según revelan los análisis de 14C. Este dato nos indica que sus aguas proceden de las precipitaciones acaecidas hacia el año 1700 a.C.</p>
-                                                                    <p>Las aguas subterráneas tienen una importancia crucial en la preservación de la vida en nuestro planeta. Tanto es así, que la UNESCO inició en 1999 el Programa Mundial de Evaluación y Cartografía Hidrogeológica (WHYMAP por sus siglas en inglés) con el objetivo de mejorar el conocimiento y la gestión de los recursos hídricos de la Tierra, y más concretamente de las aguas subterráneas. Según los informes de Naciones Unidas, los acuíferos proveen casi la mitad de toda el agua potable en el mundo y con frecuencia son la única fuente de abastecimiento en muchas regiones áridas o semiáridas del planeta.</p>
-                                                                    <p>Sin embargo, existen múltiples factores que amenazan la calidad del agua subterránea, así como la conservación y la recarga natural de los acuíferos. Entre estas amenazas se encuentra la contaminación y la sobreexplotación de los recursos hidrológicos con fines tales como la agricultura, ganadería u otras industrias que demandan, de manera insostenible, enormes cantidades de agua. Ello compromete la preservación de ecosistemas de gran valor ecológico, los cuales dependen de esta agua para su supervivencia: entornos fluviales, lacustres, humedales, entre otros muchos. Además, en muchos lugares del planeta aún existe un profundo desconocimiento de la hidrogeología, lo que impide la gestión de los recursos hídricos de una zona determinada desde un punto de vista científico. Finalmente, una mala praxis en la gobernanza del agua subterránea y su manipulación con fines geopolíticos o estratégicos ha desembocado en serios conflictos internacionales donde se pone en juego el bienestar de personas y la preservación de hábitats salvajes.</p>
-                                                                    <p>A estos riesgos se les une otro tan acuciante como lo es el cambio climático, cuyo efecto en las reservas hídricas subterráneas era desconocido hasta hace unos años, debido a la falta de estudios sobre series temporales de larga duración. No obstante, tanto la UNESCO, a través de su programa GRAPHIC (Groundwater Resources Assessment under the Pressures of Humanity and Climate Change), como el Grupo Intergubernamental de Expertos sobre el Cambio Climático, en su Quinto Informe de Evaluación, pronostican un profundo impacto en las aguas subterráneas; en gran parte debido a las intensas variaciones que ya están acaeciendo en la abundancia e intensidad de precipitaciones en muchas áreas del planeta, parámetros claves en la recarga de nuestros acuíferos.</p>
-                                                                    <p>Si algo hemos aprendido científicas y científicos del campo de las Ciencias de la Tierra y Naturaleza, es que el agua es uno de los motores primordiales que ha impulsado el desarrollo de la vida, la configuración de nuestros paisajes y en resumen, el mantenimiento de los ecosistemas pasados y presentes. De nosotros depende preservar nuestros recursos hídricos y darle una oportunidad de futuro a nuestro viejo y bello planeta.</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="solan__bigarticle__content--cta">
-                                                            </div>
-                                                        </article>
-                                                    </section>
-                                                    <section class="solan__video">
-                                                        <div class="solan__video__content">
-                                                            <video poster="./assets/images/video-frame.jpg" loading="lazy" alt="Vídeo animación Solán de Cabras" controls muted preload="auto" >
-                                                                <source src="./assets/images/solan-cabras.mp4" type="video/mp4" >
-                                                                <source src="./assets/images/solan-cabras.webm" type="video/webm" >
-                                                                <source src="./assets/images/solan-cabras.m4v" type="video/m4v" >
-                                                                Your browser does not support the video tag.
-                                                            </video> 
-                                                            <div class="solan__video__content__playbtn">
-                                                                <img src="./assets/images/player.svg" loading="lazy" alt="Play">
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                    <section class="solan__articles">
-                                                        <div class="solan__articles__content">
-                                                            <div class="solan__articles__content--logo">
-                                                                <picture alt="Solan de Cabras - Logo Oficial">
-                                                                    <source srcset="/./assets/images/solan-logo.webp" type="image/webp" loading="lazy">
-                                                                    <img src="././assets/images/solan-logo.png" loading="lazy">
-                                                                </picture>
-                                                            </div>
-                                                            <div class="solan__articles__showcase">
-                                                                <div class="solan__articles__showcase--one">
-                                                                    <a href="articulo1.html">
-                                                                        <div class="solan__article__thumb thumb-one"></div>
-                                                                        <div class="solan__article__foot">Entrevista</div>
-                                                                        <div class="solan__article__title">Solán de Cabras, comprometidos con la naturaleza</div>
-                                                                        <div class="solan__article__subtitle">Entrevista a Patricia Leiva, directora de Sostenibilidad de Mahou San Miguel.</div>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="solan__articles__showcase--two">
-                                                                    <a href="articulo2.html">
-                                                                        <div class="solan__article__thumb thumb-two"></div>
-                                                                        <div class="solan__article__foot">Experiencia</div>
-                                                                        <div class="solan__article__title">EXPEDICIÓN AL ORIGEN DEL AGUA con Solán de Cabras y National Geographic</div>
-                                                                        <div class="solan__article__subtitle">Un viaje para descubrir el origen del agua de la mano de un Explorador de National Geographic.</div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="solan__articles__content--divider"></div>
-                                                        </div>
-                                                    </section>
+                                                    {% include "gallery.njk" %}
+                                                    {% include "articles.njk" %}
                                                 </div>
                                             </div>
                                         </article>
                                     </div>
-                                    <div class="solan-videopopup">
-                                        <div class="solan-videopopup--close" aria-label="Close" role="close">
-                                            <div>X</div>
-                                        </div>
-                                        <div class="solan-videopopup--content">
-                                                    <video poster="./assets/images/interview-bg.jpg" controls muted alt="Vídeo Solán de Cabras" preload="auto" >
-                                                        <source src="./assets/images/video-solan.mp4" type="video/mp4" >
-                                                        <source src="./assets/images/video-solan.webm" type="video/webm" >
-                                                        <source src="./assets/images/video-solan.m4v" type="video/m4v" >
-                                                        Your browser does not support the video tag.
-                                                    </video> 
-                                                    <div class="solan__video__content__playbtn fix-player">
-                                                        <img src="./assets/images/player.svg" loading="lazy" alt="Play" width="180px">
-                                                    </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-nationalgeographicfooterblock" id="block-nationalgeographicfooterblock">
-                                        <div class="placeholder"><img src="./assets/images/placeholder.png"></div>
-                                    </div>
+                                    {% include "videopopup.njk" %}
+                                    {% include "footergeo.njk" %}
                                 </div>
                             </div>
                         </main>

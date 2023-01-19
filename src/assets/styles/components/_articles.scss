@@ -1,0 +1,143 @@
+/**
+Articles
+**/
+
+.novartis__articles {
+    width: 100vw;
+    min-height: max-content;
+    background-image: url('../images/bg-opaque.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-top: -.53rem;
+}
+
+.novartis__articles__content {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.novartis__articles__content--logo {
+    width: 12.5rem;
+    margin-left: 50%;
+    padding-top: 4.8rem;
+    padding-bottom: 1.5rem;
+    transform: translate(-50%)
+}
+
+.novartis__articles__content--logo img {
+    width: 100%;
+}
+
+.novartis__articles__showcase {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    margin: 5%;
+    margin-top: 0;
+    align-content: center;
+
+    @include media-breakpoint-up(md) {
+        flex-wrap: nowrap;
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.novartis__articles__showcase {
+    height: 100%;
+}
+
+.novartis__articles__showcase--one,
+.novartis__articles__showcase--two,
+.novartis__articles__showcase--three {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px 1%; 
+    margin-top: 2.8rem;
+
+    @include media-breakpoint-up(md) {
+        max-width: 33%;
+        width: 33%;
+    }
+}
+
+.novartis__article__thumb {
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+} 
+.thumb-one {
+    background-image: url('../images/article1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.thumb-two {
+    background-image: url('../images/article2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.thumb-three {
+    background-image: url('../images/article3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.novartis__article__thumb img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.novartis__article__foot {
+    padding: .7rem 0px;
+    padding-bottom: .4rem;
+    font-size: .6rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-family: GeoMedium;
+}
+
+.novartis__article__title {
+    font-size: 1.3rem;
+    letter-spacing: .04rem;
+    color: white;
+    font-family: GeoBold;
+    line-height: 1.5rem;
+}
+
+.novartis__article__subtitle {
+    padding-top: .55rem;
+    font-size: .85rem;
+    color: white;
+    font-family: GeoLight;
+} 
+
+.novartis__articles__content--divider {
+    width: 88.5%;
+    height: .08rem;
+    background-color: whitesmoke;
+    opacity: .3;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.novartis__articles__showcase--one a, .novartis__articles__showcase--two a , .novartis__articles__showcase--three a {
+    transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.novartis__articles__showcase--one a:hover,
+.novartis__articles__showcase--two a:hover,
+.novartis__articles__showcase--three a:hover {
+    opacity: .6;
+}
