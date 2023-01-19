@@ -35,18 +35,11 @@ Articles
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    margin: 5%;
     margin-top: 0;
     align-content: center;
 
     @include media-breakpoint-up(md) {
         flex-wrap: nowrap;
-    }
-
-    @include media-breakpoint-up(xl) {
-        max-width: 1500px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 }

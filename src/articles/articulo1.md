@@ -2,7 +2,9 @@
 foot: ENTREVISTA
 title: REDESCUBRIENDO LA MEDICINA
 subtitle: Entrevista a Javier Malpesa, Jefe de Monitorización en Ensayos Clínicos
-video: ../../assets/images/entrevista1.mp4
+videoMp4: ../../assets/images/entrevista1.mp4
+videoCover: ../../assets/images/cover-article1-1.jpg
+videoAlt: Vídeo Novartis
 ---
 
 ## ¿Qué es la medicina moderna y cómo ha contribuido a nuestra salud?

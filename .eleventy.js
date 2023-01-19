@@ -50,10 +50,11 @@ module.exports = function (config) {
     config.addLayoutAlias('article', 'article.njk')
 
     // Pass-through files
-    config.addPassthroughCopy('src/robots.txt')
+    // config.addPassthroughCopy('src/robots.txt')
     config.addPassthroughCopy('src/site.webmanifest')
     config.addPassthroughCopy('src/assets/images')
     config.addPassthroughCopy('src/assets/fonts')
+    config.addPassthroughCopy({'src/assets/scripts/js':'assets/scripts'})
 
     // Deep-Merge
     config.setDataDeepMerge(true)

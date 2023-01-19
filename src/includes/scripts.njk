@@ -1,21 +1,47 @@
+    <link rel="stylesheet" href="assets/scripts/swiper-bundle.min.css"/>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
     <script>
+        /**
+         * Slider
+        */
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+
+
         /**
          * Main Player Video
         */
-        const videoPlayer = document.querySelector('video')
-        const videoPlayIcon = document.querySelector('.novartis__video__content__playbtn')
-        videoPlayer.addEventListener('play', () => {
-            videoPlayIcon.style.display = 'none'
-        })
-        videoPlayer.addEventListener('pause', () => {
-            videoPlayIcon.style.display = 'block'
-        })
+        const videoPlayer = document.querySelectorAll('.novartis__video')
+
+        videoPlayer.forEach(element => {
+                const video = element.querySelector('video')
+                const videoPlayIcon = element.querySelector('.novartis__video__playbtn')
+                
+                video.addEventListener('play', () => {
+                    videoPlayIcon.style.display = 'none'
+                })
+                video.addEventListener('pause', () => {
+                    videoPlayIcon.style.display = 'block'
+                })
+
+         })
+
     
 
         /**
          * Main Player Header Video
         */
-        let headerIsPlaying = false
+        {# let headerIsPlaying = false
         const videoPlayerHeader = document.querySelector('.novartis-videopopup--content video')
         const videoPlayIconHeader = document.querySelector('.fix-player')
         videoPlayerHeader.addEventListener('play', () => {
@@ -23,12 +49,12 @@
         })
         videoPlayerHeader.addEventListener('pause', () => {
             videoPlayIconHeader.style.display = 'block'
-        })
+        }) #}
 
         /**
         Video header
         */
-        const videoHeader = document.querySelector('#videoheader')
+        {# const videoHeader = document.querySelector('#videoheader')
         const videoPopup = document.querySelector('.novartis-videopopup')
         const videoPopupClose = document.querySelector('.novartis-videopopup--close')
         videoHeader.addEventListener('click', (e) => {
@@ -42,5 +68,5 @@
                 headerIsPlaying = !headerIsPlaying
             }
             videoPlayerHeader.pause()
-        })
+        }) #}
     </script>

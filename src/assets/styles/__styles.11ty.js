@@ -26,7 +26,7 @@ module.exports = class {
         return new Promise((resolve, reject) => {
             if (!isProd) {
                 config.sourceMap = true
-                config.sourceMapEmbed = true
+                config.sourceMapEmbed = false
                 config.outputStyle = 'expanded'
             }
             return sass.render(config, (err, result) => {

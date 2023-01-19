@@ -6,7 +6,7 @@ layout: base
             <div class="page-content">
                 <div class="content-cntr">
                      <div class="headers-container">
-                        <div class="placeholder"><img src="./assets/images/placeholder.png"></div>
+                        <div class="placeholder"><img src="../../assets/images/placeholder.png"></div>
                     </div>
                     <div class="layout-cntr">
                         <div class="ng-ad-banner"></div>
@@ -31,18 +31,16 @@ layout: base
                                                             </div>
                                                         </div>
                                                     </section>
-                                                    <section class="article__video">
-                                                        <div class="novartis__video__content">
-                                                            <video poster="./assets/images/video-frame.jpg" loading="lazy" alt="Vídeo animación Solán de Cabras" controls muted preload="auto" >
-                                                                <source src="./assets/images/solan-cabras.mp4" type="video/mp4" >
+                                                    <section class="article__video novartis__video">
+                                                            <video poster="{{videoCover}}" loading="lazy" alt="{{videoAlt}}" controls muted preload="auto" >
+                                                                <source src="{{videoMp4}}" type="video/mp4" >
                                                                 <source src="./assets/images/solan-cabras.webm" type="video/webm" >
                                                                 <source src="./assets/images/solan-cabras.m4v" type="video/m4v" >
                                                                 Your browser does not support the video tag.
                                                             </video> 
-                                                            <div class="novartis__video__content__playbtn">
-                                                                <img src="./assets/images/player.svg" loading="lazy" alt="Play">
+                                                            <div class="novartis__video__playbtn">
+                                                                <img src="../../assets/images/player.svg" loading="lazy" alt="Play">
                                                             </div>
-                                                        </div>
                                                     </section>
                                                     <article class="novartis__article__content">
                                                         {{content|safe}}
@@ -51,7 +49,9 @@ layout: base
                                             </div>
                                         </article>
                                     </div>
-                                    {% include "footergeo.njk" %}
+                                    <div class="block-nationalgeographicfooterblock" id="block-nationalgeographicfooterblock">
+                                        <div class="placeholder"><img src="../../assets/images/placeholder.png"></div>
+                                    </div>
                                 </div>
                             </div>
                         </main>

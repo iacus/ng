@@ -2,6 +2,8 @@
 foot: CONTENIDO DE MARCA
 title: TERAPIAS AVANZADAS
 subtitle: ¿Qué es la medicina personalizada? Profundizando en las terapias génicas y celulares.
+videoCover: ../../assets/images/cover-article2-1.jpg
+videoAlt: Vídeo Novartis
 ---
 
 ## Terapias génicas

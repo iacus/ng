@@ -5,25 +5,23 @@ Video
 .novartis__video {
     width: 100vw;
     height: 100%;
-}
-
-.novartis__video__content {
     position: relative;
+
 }
 
-.novartis__video__content video {
+.novartis__video video {
     width: 100%;
     object-fit: fill;
 
 }
 
-.novartis__video__content__playbtn {
+.novartis__video__playbtn {
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
-.novartis__video__content video:hover {
+.novartis__video video:hover {
     cursor: pointer;
 }

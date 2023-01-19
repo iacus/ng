@@ -8,7 +8,7 @@
 
 @import "utils/variables";
 @import "utils/breakpoints";
-@import "utils/animations";
+// @import "utils/animations";
 @import "utils/mixins";
 @import "utils/utils";
 
@@ -39,6 +39,8 @@
 @import "components/articles";
 @import "components/article";
 @import "components/video";
+@import "components/slider";
+@import "components/cases";
 
 
 @import "base/heredado"

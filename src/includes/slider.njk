@@ -1,0 +1,18 @@
+<div class="novartis__gallery novartis__container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            {% for item in slider.gallery %}
+                <div class="swiper-slide">
+                <figure>
+                    <img src="{{item.img}}" >
+                    <figcaption>{{item.title}}</figcaption>
+                </figure>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+</div>
