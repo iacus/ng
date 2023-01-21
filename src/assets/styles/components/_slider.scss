@@ -1,18 +1,56 @@
-.swiper {
-    height: 80vh;
-    width: 80%;
-    margin-bottom: var(--spacing-xxxl);
+:root {
+    --swiper-navigation-color: black;
+    --swiper-theme-color: black;
+}
 
+.novartis__gallery {
     position: relative;
+    margin-bottom: $--spacing-xxxl;
+
+    @include media-breakpoint-up(md) {
+        width: 70%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 45% !important;
+    }
+}
+
+.novartis__gallery .swiper {
+    width: 80%;
 
     &-wrapper {
-        position: relative;
+        width: 50%;
     }
 
     &-slide {
+        text-align: center;
+        width: auto;
+    }
 
-        figure {
+    &-image {
+        height: 90vw;
+        overflow: hidden;
+        padding-bottom: $--spacing-xs;
+        text-align: center;
 
+        @include media-breakpoint-up(md) {
+            height: 40vw;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
         }
     }
+
+    p {
+        font-family: 'GeoLight';
+        text-align: center;
+        font-size: .8rem;
+    }
+
+
 }

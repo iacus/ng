@@ -4,36 +4,11 @@ eleventyNavigation:
   key: Home
 ---
 
- <div id="___gatsby">
-        <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
-            <div class="page-content">
-                <div class="content-cntr">
-                    {% include "headergeo.njk" %}
-                    <div class="layout-cntr">
-                        <div class="ng-ad-banner"></div>
-                        <main role="main" id="main-content">
-                            <div id="layout-content">
-                                <div>
-                                    <div id="block-nationalgeographic-content">
-                                        <article data-history-node-id="" about="" typeof="schema:WebPage" class="node node--type-page">
-                                            <div id="blank-template-custom-body" class="node__cont">
-                                                <div class="novartis__wrapper">
-                                                    {% include "banner.njk" %}
-                                                    {% include "header.njk" %}
-                                                    {% include "cases.njk" %}
-                                                    {% include "slider.njk" %}
-                                                    {% include "articles.njk" %}
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    {% include "videopopup.njk" %}
-                                    {% include "footergeo.njk" %}
-                                </div>
-                            </div>
-                        </main>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="novartis__wrapper">
+    {% include "banner.njk" %}
+    {% include "header.njk" %}
+    {% include "cases.njk" %}
+    {% include "slider.njk" %}
+    {% include "articles.njk" %}
+    {% include "videopopup.njk" %}
+</div>

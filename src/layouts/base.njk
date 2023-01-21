@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="{{ meta.lang }}">
+<html lang="en-gb" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ meta.title }}</title>
-
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cms-uk.ngeo.com/legacy/theme/css/styles.min.css?87cccc10d93c4de3737ec4d6ca430310" media="all"/> 
+    <link rel="preconnect" href="https://static.nationalgeographic.co.uk" crossorigin="anonymous"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="shortcut icon" href="https://cms-uk.ngeo.com/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <title data-react-helmet="true">Novartis | National Geographic</title>
+    {# <link rel="stylesheet" href="styles/style.css" /> #}
     <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
-    {% include "meta.njk" %}
+    <style>
+        .ng-ad-banner{display:none;}
+    </style>
 </head>
-<body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
-    {% iconsprite %}
-
-    <div class="layout" role="document">
-        <main id="swup" class="main transition-fade" tabindex="-1">
-            {{ content | safe }}
-        </main>
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
+            <div class="page-content">
+                <div class="content-cntr">
+                     <div class="headers-container">
+                        <div class="placeholder"><img src="/assets//placeholder.png"></div>
+                    </div>
+                    <div class="layout-cntr">
+                        <div class="ng-ad-banner"></div>
+                        <main role="main" id="main-content">
+                            <div id="layout-content">
+                                <div>
+                                    <div id="block-nationalgeographic-content">
+                                        <article data-history-node-id="40982" about="https://cms-uk.ngeo.com/thank-you" typeof="schema:WebPage" class="node node--type-page">
+                                            <div id="blank-template-custom-body" class="node__cont">
+                                                {{content | safe}}
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="block-nationalgeographicfooterblock" id="block-nationalgeographicfooterblock">
+                                        <div class="placeholder"><img src="/assets//placeholder.png"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
     {% include "scripts.njk" %}
 </body>
 </html>

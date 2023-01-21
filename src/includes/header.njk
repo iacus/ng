@@ -1,13 +1,11 @@
 <section class="novartis__header">
     <section class="novartis__header__video novartis__video">
-        <video poster="./assets/images/video-frame.jpg" loading="lazy" alt="Video Novartis" controls muted preload="auto" >
-            <source src="./assets/images/solan-cabras.mp4" type="video/mp4" >
-            <source src="./assets/images/solan-cabras.webm" type="video/webm" >
-            <source src="./assets/images/solan-cabras.m4v" type="video/m4v" >
+        <video poster="/assets/novartis-home.jpg" loading="lazy" alt="Video Novartis" muted preload="auto" >
+            <source src="/assets/novartis-home.mp4" type="video/mp4" >
+            <source src="/assets/novartis-home.webm" type="video/webm" >
+            <source src="/assets/novartis-home.m4v" type="video/m4v" >
             Your browser does not support the video tag.
         </video> 
-        <div class="novartis__video__playbtn">
-            <img src="./assets/images/player.svg" loading="lazy" alt="Play">
-        </div>
+        {% include "playerbtn.njk" %}
     </section>
 </section>

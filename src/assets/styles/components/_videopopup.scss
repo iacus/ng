@@ -1,0 +1,58 @@
+/**
+Video Popup
+*/
+.novartis-videopopup {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .85);
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+
+.novartis-videopopup--close {
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+}
+
+.novartis-videopopup--close svg {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    transition: opacity 300ms ease-in-out;
+}
+.novartis-videopopup--close svg:hover {
+    cursor: pointer;
+    opacity: .3;
+}
+
+.novartis-videopopup--content {
+    position: relative;
+    width: 80%;
+    height: max-content;
+    margin-top:50vh;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.novartis-videopopup--video {
+    display: none;
+}
+
+.novartis-videopopup--content video {
+    height: auto;
+    width: 80vw;
+    pointer-events: all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+.novartis-videopopup--content video:hover {
+    cursor: pointer;
+}
+

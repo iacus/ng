@@ -3,16 +3,16 @@
         <div class="swiper-wrapper">
             {% for item in slider.gallery %}
                 <div class="swiper-slide">
-                <figure>
-                    <img src="{{item.img}}" >
-                    <figcaption>{{item.title}}</figcaption>
-                </figure>
+                    <div class="swiper-image">
+                        <picture>
+                            <img loading="lazy" src="{{item.img}}">
+                        </picture>
+                    </div>
+                    <p>{{item.title}}</p> 
                 </div>
             {% endfor %}
         </div>
     </div>
-
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-
 </div>

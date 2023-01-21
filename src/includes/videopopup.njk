@@ -1,16 +1,21 @@
-<div class="solan-videopopup">
-    <div class="solan-videopopup--close" aria-label="Close" role="close">
-        <div>X</div>
+<div class="novartis-videopopup">
+    <div class="novartis-videopopup--close" aria-label="Close" role="close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="2.82861" width="4" height="32" transform="rotate(-45 0 2.82861)" fill="white"/>
+            <rect x="22.6274" width="4" height="32" transform="rotate(45 22.6274 0)" fill="white"/>
+        </svg>
     </div>
-    <div class="solan-videopopup--content">
-                <video poster="./assets/images/interview-bg.jpg" controls muted alt="Vídeo Solán de Cabras" preload="auto" >
-                    <source src="./assets/images/video-solan.mp4" type="video/mp4" >
-                    <source src="./assets/images/video-solan.webm" type="video/webm" >
-                    <source src="./assets/images/video-solan.m4v" type="video/m4v" >
-                    Your browser does not support the video tag.
-                </video> 
-                <div class="solan__video__content__playbtn fix-player">
-                    <img src="./assets/images/player.svg" loading="lazy" alt="Play" width="180px">
+    <div class="novartis-videopopup--content">
+                {% for item in cases.people %}
+                <div data-id="{{loop.index}}" class="novartis-videopopup--video novartis__video">
+                    <video poster="{{item.videoCover}}" muted alt="Vídeo {{item.title}} {{item.subtitle}}" preload="auto" >
+                        <source src="{{item.videoMp4}}" type="video/mp4" >
+                        <source src="{{item.videoWebm}}" type="video/webm" >
+                        <source src="{{item.videoM4v}}" type="video/m4v" >
+                        Your browser does not support the video tag.
+                    </video>
+                    {% include "playerbtn.njk" %}
                 </div>
+                {% endfor %}
     </div>
 </div>

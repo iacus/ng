@@ -2,8 +2,9 @@
 foot: ENTREVISTA
 title: REDESCUBRIENDO LA MEDICINA
 subtitle: Entrevista a Javier Malpesa, Jefe de Monitorización en Ensayos Clínicos
-videoMp4: ../../assets/images/entrevista1.mp4
-videoCover: ../../assets/images/cover-article1-1.jpg
+videoMp4: /assets/novartis-articulo1.mp4
+videoWebm: /assets/novartis-articulo1.webm
+videoCover: /assets/cover-article1-1.jpg
 videoAlt: Vídeo Novartis
 ---
 
@@ -28,7 +29,7 @@ En esta nueva era de la medicina se trabaja con muchos tipos de datos, especialm
 En Novartis, estamos comprometidos con el avance de la medicina personalizada y creemos firmemente que el futuro de la medicina consiste en generar resultados en la salud, no medicamentos.
 
 <figure>
-    <img src="../../assets/images/novartis_15_1.jpg" >
+    <img src="/assets/novartis_15_1.jpg" >
 </figure>
 
 ## ¿Qué son las terapias avanzadas?
@@ -64,7 +65,7 @@ Los ensayos clínicos se realizan en 4 fases que van de pequeña a gran escala:
 Llevar a cabo todas estas fases conlleva una media de 10 a 15 años de trabajo, puesto que solo 1 de cada 10.000 moléculas estudiadas llega a comercializarse. En Novartis trabajamos para reimaginar la medicina a través de los ensayos clínicos. Desarrollar nuevos fármacos es nuestra prioridad para mejorar y prolongar la vida de las personas.
 
 <figure>
-    <img src="../../assets/images/novartis_15_2.jpg" >
+    <img src="/assets/novartis_15_2.jpg" >
 </figure>
 
 ## ¿Cómo han evolucionado los ensayos clínicos?

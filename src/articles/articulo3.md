@@ -2,6 +2,8 @@
 foot: CONTENIDO DE MARCA
 title: TERAPIAS DIRIGIDAS
 subtitle: "Radioligandos: El futuro de la oncología"
+heroImage: /assets/novartis-article3-hero.jpg
+heroImageAlt: teparpias dirigidas
 ---
 
 ## Terapia con radioligandos
@@ -17,7 +19,7 @@ El cáncer de próstata es una forma de cáncer que se desarrolla en la glándul
 Hablamos de un gran grupo de tumores muy variables que se originan a partir de células neuroendocrinas. Pueden aparecer en prácticamente cualquier órgano del cuerpo, aunque las localizaciones más frecuentes son el tubo digestivo, el páncreas y el pulmón. Son relativamente poco frecuentes, con una incidencia de 5 casos por 100.000 habitantes cada año. Sin embargo, se ha observado un aumento de los casos de TNE en los últimos 30 años, que podría estar relacionado con las mejoras en las técnicas de diagnóstico y con un mayor conocimiento de la enfermedad.
 
 <figure>
-    <img src="../../assets/images/tumores-neuroendocrinos.jpg" >
+    <img src="/assets/novartis-tumores-neuroendocrinos.jpg" >
 </figure>
 
 Con una trayectoria de más de 30 años aportando innovación al abordaje de los TNE, en Novartis tenemos el compromiso de reimaginar el cáncer a través de la terapia con radioligandos, con más de 15 programas de investigación y descubrimiento dedicados a esta estrategia terapéutica que está transformando el diagnóstico, tratamiento y pronóstico de este grupo de enfermedades. Estamos invirtiendo en el descubrimiento y expansión de esta importante plataforma, incluyendo la exploración de nuevos radioisótopos y combinaciones con mecanismos de acción complementarios, como la inmunoterapia y los inhibidores de la respuesta al daño del ADN.

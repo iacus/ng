@@ -22,7 +22,6 @@
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-img": "^0.8.2",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@babel/core": "^7.13.14",
@@ -43,8 +42,8 @@
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.4",
     "memfs": "^3.2.0",
-    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
+    "sass": "^1.57.1",
     "svg-sprite": "^1.5.0",
     "swup": "^2.0.14",
     "viewport-units-buggyfill": "^0.6.2",

@@ -2,7 +2,9 @@
 foot: CONTENIDO DE MARCA
 title: TERAPIAS AVANZADAS
 subtitle: ¿Qué es la medicina personalizada? Profundizando en las terapias génicas y celulares.
-videoCover: ../../assets/images/cover-article2-1.jpg
+videoMp4: /assets/novartis-articulo2.mp4
+videoWebm: /assets/novartis-articulo2.webm
+videoCover: /assets/cover-article2-1.jpg
 videoAlt: Vídeo Novartis
 ---
 
@@ -15,12 +17,12 @@ Las terapias génicas tienen como finalidad tratar o prevenir una amplia gama de
 <div class="cols2">
 
 <figure>
-    <img src="../../assets/images/retina.jpg" >
+    <img src="/assets/novartis-retina.jpg" >
     <figcaption>Sección sagital de una retina</figcaption>
 </figure>
 
 <figure>
-    <img src="../../assets/images/retina2.jpg" >
+    <img src="/assets/novartis-retina2.jpg" >
     <figcaption>Células ganglionares de la retina sensibles a la luz</figcaption>
 </figure>
 
@@ -40,7 +42,7 @@ Actualmente, la terapia celular CAR-T se está estudiando para el tratamiento de
 Entre sus principales beneficios y ventajas, respecto a la medicina tradicional y los tratamientos genéricos, encontramos que se trata de un tratamiento potencialmente definitivo, que re-define la esperanza de vida de pacientes que no cuentan con mucho tiempo. Además, no solo genera muchos menos efectos secundarios en la calidad de vida del paciente, sino que es posible que éstos no necesiten otro tratamiento después de la terapia celular CAR-T, especialmente si han logrado una remisión completa (RC).
 
 <figure>
-    <img src="../../assets/images/Celulas-CAR-T.jpg" >
+    <img src="/assets/novartis-celulas.jpg" >
     <figcaption>Células CAR-T atacando el tumor objetivo</figcaption>
 </figure>
 
@@ -48,12 +50,12 @@ Entre sus principales beneficios y ventajas, respecto a la medicina tradicional 
 
 Las células T del paciente se extraen y reprograman fuera del organismo para reconocer y combatir las células cancerígenas y otras células que expresan un antígeno determinado. Al contrario que los productos de moléculas pequeñas o biológicos tradicionales, las terapias CAR-T autólogas se fabrican específicamente para cada paciente mediante un complejo proceso y por ello exigen un cambio de paradigma a la hora de planificar la fabricación, la logística y la administración.
 
-<video poster="../../assets/images/video-frame.jpg" loading="lazy" alt="Vídeo animación Solán de Cabras" controls muted preload="auto" >
-    <source src="./assets/images/car-t.mp4" type="video/mp4" >
-    <!-- <source src="./assets/images/solan-cabras.webm" type="video/webm" >
-    <source src="./assets/images/solan-cabras.m4v" type="video/m4v" > -->
-    Your browser does not support the video tag.
-</video> 
-<div class="novartis__video__content__playbtn">
-    <img src="../../assets/images/player.svg" loading="lazy" alt="Play">
-</div>
+<section class="novartis__article__content__video novartis__video">
+    <video poster="/assets/cover-article2-2.jpg" loading="lazy" alt="{{videoAlt}}" muted preload="auto" >
+        <source src="/assets/novartis-articulo2-2.mp4" type="video/mp4" >
+        <source src="/assets/novartis-articulo2-2.webm" type="video/webm" >
+        <source src="/assets/novartis-articulo2-2.m4v" type="video/m4v" >
+        Your browser does not support the video tag.
+    </video> 
+    {% include "playerbtn.njk" %}
+</section>

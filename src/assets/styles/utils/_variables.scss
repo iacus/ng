@@ -1,21 +1,8 @@
-$gold:                        #a99278;
 $black:                       #000000;
 $white:                       #FFFFFF;
-$blue:                        #007bff;
-$indigo:                      #6610f2;
-$purple:                      #6f42c1;
-$pink:                        #e83e8c;
-$red:                         #dc3545;
-$orange:                      #fd7e14;
-$yellow:                      #ffc107;
-$green:                       #28a745;
-$cyan:                        #17a2b8;
-$gray-dark:                   #373a3c;
-$gray-light:                  #DDDDDD;
 
 $primary:                     $black;
 $secondary:                   $white;
-$accent:                      $yellow;
 
 $text-color:                  $primary;
 $bg-color:                    $secondary;
@@ -32,8 +19,6 @@ $font-size-root:              100%;
 $font-size-base:              1rem;
 
 $headings-line-height:        1;
-
-$headings-margin-bottom:      0;
 
 //Spacers
 $spacer: 1rem;
@@ -53,24 +38,12 @@ $grid-breakpoints: (
   xxl: 2000px
 );
 
-// Animation
-//
-// Default easing curves, Transitions, etc
-
-$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
-$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
-$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
-$animation-curve-default: $animation-curve-fast-out-slow-in;
-
-
-:root {
-  --spacing-xxxs: .15rem;
-  --spacing-xxs: .25rem;
-  --spacing-xs: .6rem;
-  --spacing-s: 1rem;
-  --spacing-m: 1.5rem;
-  --spacing-l: 2rem;
-  --spacing-xl: 3.5rem;
-  --spacing-xxl: 5rem;
-  --spacing-xxxl: 8rem;
-}
+$--spacing-xxxs: .15rem;
+$--spacing-xxs: .25rem;
+$--spacing-xs: .6rem;
+$--spacing-s: 1rem;
+$--spacing-m: 1.5rem;
+$--spacing-l: 2rem;
+$--spacing-xl: 3.5rem;
+$--spacing-xxl: 5rem;
+$--spacing-xxxl: 8rem;

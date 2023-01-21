@@ -1,125 +1,72 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   -webkit-overflow-scrolling: touch;
-   font-feature-settings: "calt" 0, "kern" 1;
-   font-variant-ligatures: none;
-   font-kerning: auto !important;
-}
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+.novartis__wrapper {
 
-*, :after, :before , *:after, *:before {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -webkit-box-sizing: border-box;
+  * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    font-feature-settings: "calt" 0, "kern" 1;
+    font-variant-ligatures: none;
+    font-kerning: auto !important;
+ }
+ 
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+ 
+ *, :after, :before , *:after, *:before {
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
 
-html {
-  box-sizing: border-box;
-  font-size: 19px;
-  height: auto;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: $font-size-base;
+    line-height: $headings-line-height;
+    font-weight: $font-weight-base;
+    margin: 0;
+  }
 
-::selection {
-   background: $primary;
-   color: $secondary;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
 
-::-moz-selection {
-   background: $primary;
-   color: $secondary;
-}
-
-body {
-   font-family: $font-family-base;
-   color: $primary;
-   background-color: $secondary;
-   line-height: $line-height-base;
-   margin: 0;
-   padding: 0;
-
-   &.open {
-      overflow: hidden;
-   }
-
-    &.debug::after{
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    content: "mobile";
-    padding: 10px;
-    background-color: red;
-    z-index: 999999999;
-    @include media-breakpoint-up (xs) {
-      content: "xs " attr(data-width);
-    }
-    @include media-breakpoint-up (sm) {
-      content: "small " attr(data-width);
-    }
-    @include media-breakpoint-up (md) {
-      content: "medium " attr(data-width);
-    }
-    @include media-breakpoint-up (lg) {
-      content: "large " attr(data-width);
-    }
-    @include media-breakpoint-up (xl) {
-      content: "xl " attr(data-width);
-    }
-    @include media-breakpoint-up (xxl) {
-      content: "xxl " attr(data-width);
+    &:hover{
+      text-decoration: none;
+      color: inherit;
     }
   }
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: $font-size-base;
-  line-height: $headings-line-height;
-  font-weight: $font-weight-base;
-  margin: 0;
-}
+  p {
+    margin-bottom: 0;
+  }
 
-a {
-   color: inherit;
-   text-decoration: none;
+  img {
+    width: 100%;
+  }
 
-   &:hover{
-     text-decoration: none;
-     color: inherit;
-   }
-}
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+  }
 
-p {
-   margin-bottom: 0;
-}
+  dt {
+    font-weight: normal;
+  }
 
-img {
-   width: 100%;
-}
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
 
-ul {
-  list-style-type: none;
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: normal;
-}
-
-button {
-  outline: none;
-  border: none;
-  background-color: transparent;
 }

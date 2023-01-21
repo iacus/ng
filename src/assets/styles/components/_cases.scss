@@ -8,13 +8,15 @@ Cases
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: var(--spacing-xs);
-    padding: var(--spacing-m);
+    gap: $--spacing-xs;
+    padding: $--spacing-m;
+    padding-top: $--spacing-xxl;
+    padding-bottom: $--spacing-xxl;
 
     @include media-breakpoint-up(md) {
         grid-template-columns: repeat(3, 1fr);
-        padding-top: var(--spacing-xxxl);
-        padding-bottom: var(--spacing-xxxl);
+        padding-top: $--spacing-xxxl;
+        padding-bottom: $--spacing-xxxl;
     }
 }
 
@@ -22,12 +24,26 @@ Cases
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: var(--spacing-l);
-    padding-right: var(--spacing-l);
-    padding-bottom: var(--spacing-xxl);
+    padding-left: $--spacing-xs;
+    padding-right: $--spacing-xs;
+    padding-bottom: $--spacing-xxxl;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
+        padding-left: $--spacing-m;
+        padding-right: $--spacing-m;
         padding-bottom: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-left: $--spacing-l;
+        padding-right: $--spacing-l;
+    }
+
+    &:last-of-type {
+        padding-bottom: $--spacing-m;
     }
 }
 
@@ -63,4 +79,33 @@ Cases
 .novartis__cases__bio p {
     padding-bottom: 1rem;
     font-family: GeoLight;
+}
+
+.novartis__cases__play {
+
+    svg * {
+        transform-box:fill-box; transform-origin: center;
+    }
+
+    svg circle {
+        transition: all 300ms ease-in-out;
+    }
+
+    svg path {
+        transition: all 200ms ease-in-out 100ms;
+    }
+    
+}
+
+.novartis__cases__play:hover {
+    cursor: pointer;
+
+    circle {
+        transform:scale(1.2,1.2);
+    }
+    path {
+        transform:scale(1.1,1.1);
+    }
+
+    
 }

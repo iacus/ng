@@ -8,24 +8,16 @@
 
 @import "utils/variables";
 @import "utils/breakpoints";
-// @import "utils/animations";
 @import "utils/mixins";
-@import "utils/utils";
 
 //--------------------
 // BASE MODULES
 // partials with global scope
 //--------------------
 
-@import 'base/normalize';
 @import "base/fonts";
-@import "base/type-sets";
 @import "base/base";
-@import "base/reboot";
-@import "base/screenreader";
-@import "base/focus";
 @import "base/layout";
-// @import "base/loader";
 
 //--------------------
 // COMPONENTS
@@ -34,13 +26,11 @@
 
 @import "components/nav";
 @import "components/header";
-@import "components/footer";
 @import "components/layout";
 @import "components/articles";
 @import "components/article";
 @import "components/video";
 @import "components/slider";
 @import "components/cases";
-
-
-@import "base/heredado"
+@import "components/figure";
+@import "components/videopopup";

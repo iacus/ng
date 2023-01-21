@@ -1,62 +1,42 @@
 ---
 layout: base
 ---
- <div id="___gatsby">
-        <div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper">
-            <div class="page-content">
-                <div class="content-cntr">
-                     <div class="headers-container">
-                        <div class="placeholder"><img src="../../assets/images/placeholder.png"></div>
-                    </div>
-                    <div class="layout-cntr">
-                        <div class="ng-ad-banner"></div>
-                        <main role="main" id="main-content">
-                            <div id="layout-content">
-                                <div>
-                                    <div id="block-nationalgeographic-content">
-                                        <article data-history-node-id="" about="" typeof="schema:WebPage" class="node node--type-page">
-                                            <div id="blank-template-custom-body" class="node__cont">
-                                                <div class="novartis__wrapper">
-                                                    {% include "banner.njk" %}
-                                                    <section class="novartis__header">
-                                                        <div class="novartis__header__article">
-                                                            <div class="novartis__header__article--type">
-                                                                <h4>{{foot}}</h4>
-                                                            </div>
-                                                            <div class="novartis__header__article--title">
-                                                                <h1>{{title}}</h1>
-                                                            </div>
-                                                            <div class="novartis__header__article--subtitle">
-                                                                <h6>{{subtitle}}</h6>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                    <section class="article__video novartis__video">
-                                                            <video poster="{{videoCover}}" loading="lazy" alt="{{videoAlt}}" controls muted preload="auto" >
-                                                                <source src="{{videoMp4}}" type="video/mp4" >
-                                                                <source src="./assets/images/solan-cabras.webm" type="video/webm" >
-                                                                <source src="./assets/images/solan-cabras.m4v" type="video/m4v" >
-                                                                Your browser does not support the video tag.
-                                                            </video> 
-                                                            <div class="novartis__video__playbtn">
-                                                                <img src="../../assets/images/player.svg" loading="lazy" alt="Play">
-                                                            </div>
-                                                    </section>
-                                                    <article class="novartis__article__content">
-                                                        {{content|safe}}
-                                                    </article>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="block-nationalgeographicfooterblock" id="block-nationalgeographicfooterblock">
-                                        <div class="placeholder"><img src="../../assets/images/placeholder.png"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </main>
-                    </div>
-                </div>
+
+<div class="novartis__wrapper">
+    {% include "banner.njk" %}
+    <section class="novartis__header__article">
+        <div class="novartis__header__article novartis__container">
+            <div class="novartis__header__article--type">
+                <h4>{{foot}}</h4>
+            </div>
+            <div class="novartis__header__article--title">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="novartis__header__article--subtitle">
+                <h6>{{subtitle}}</h6>
             </div>
         </div>
-    </div>
+    </section>
+        {% if videoMp4  %}
+            <section class="novartis__article__header__video novartis__video">
+                    <video poster="{{videoCover}}" loading="lazy" alt="{{videoAlt}}" muted preload="auto" >
+                        <source src="{{videoMp4}}" type="video/mp4" >
+                        <source src="{{videoWebm}}" type="video/webm" >
+                        {# <source src="./assets/images/solan-cabras.m4v" type="video/m4v" > #}
+                        Your browser does not support the video tag.
+                    </video> 
+                    {% include "playerbtn.njk" %}
+            </section>
+        {% endif %}
+        {% if heroImage %}
+            <section class="novartis__article__header__image">
+                <picture>
+                    <img src="{{heroImage}}" alt="{{heroImageAlt}}">
+                </picture>
+            </section>
+        {% endif %}
+        <article class="novartis__article__content novartis__container">
+            {{content|safe}}
+        </article>
+</div>
+                                            
