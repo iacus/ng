@@ -3,7 +3,7 @@ Articles
 **/
 
 .novartis__articles {
-    width: 100vw;
+    width: 100%;
     min-height: max-content;
     background-image: url('../assets/bg-opaque.jpg');
     background-size: cover;
@@ -27,8 +27,8 @@ Articles
 .novartis__articles__content--logo {
     width: 12.5rem;
     margin-left: 50%;
-    padding-top: 4.8rem;
-    padding-bottom: 1.5rem;
+    padding-top: $--spacing-xl;
+    padding-bottom: $--spacing-m;
     transform: translate(-50%)
 }
 

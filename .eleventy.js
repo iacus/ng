@@ -29,6 +29,38 @@ async function imageShortcode(src, klass, alt, sizes, lazzy) {
     return Image.generateHTML(metadata, imageAttributes);
 }
 
+async function imageShortcodeDataSrc(src, klass, alt, sizes = "100vw") {
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
+  
+    let metadata = await Image(src, {
+    //   widths: [300, 600, 1000, 1500],
+      formats: ['webp', 'jpeg'],
+      outputDir: "./dist/assets",
+      urlPath: "assets/",
+    });
+  
+    let lowsrc = metadata.jpeg[0];
+    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+  
+    return `<picture>
+      ${Object.values(metadata).map(imageFormat => {
+        return `  <source type="${imageFormat[0].sourceType}" data-srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+      }).join("\n")}
+        <img
+          data-src="${highsrc.url}"
+          width="${highsrc.width}"
+          height="${highsrc.height}"
+          alt="${alt}"
+          class="${klass}"
+          decoding="async">
+      </picture>`;
+  }
+
+
+
 module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
@@ -38,6 +70,7 @@ module.exports = function (config) {
         svgSpriteShortcode: "iconsprite"
     })
     config.addNunjucksAsyncShortcode("image", imageShortcode);
+    config.addNunjucksAsyncShortcode("imagedatasrc", imageShortcodeDataSrc);
 
     // Filters
     Object.keys(filters).forEach((filterName) => {

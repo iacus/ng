@@ -2,11 +2,11 @@
 
 module.exports = (url, alt = "Missing alt text",picClass,lazy = false) => {
     if (lazy !== 'lazy') {
-      return `<picture class="${picClass}">
+      return `<picture class=" ojete ${picClass}">
       <img src="/images/${url}" alt="${alt}" />
     </picture>`;
   } else {
-    return `<picture>
+    return `<picture class=="calor">
       <img src="/images/${url}" alt="${alt}" />
   </picture>`;
   }

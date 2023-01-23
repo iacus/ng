@@ -4,3 +4,7 @@ node_modules
 dist
 .env
 package-lock.json
+src/assets/videos/novartis-home.mp4
+src/assets/videos/novartis-home.webm
+.DS_Store
+.DS_Store

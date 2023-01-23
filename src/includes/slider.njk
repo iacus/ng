@@ -9,7 +9,7 @@
                         </div>
                     {% else %}
                         <div class="swiper-image">
-                            {% image "./src/assets/images/"+item.img|safe , "img-fit", item.title, "(min-width: 30em) 50vw, 100vw" , "lazy" %}
+                            {% imagedatasrc "./src/assets/images/"+item.img|safe , "swiper-lazy", item.title, "(min-width: 30em) 50vw, 100vw" %}
                         </div>
                     {% endif %}
                     <p>{{item.title}}</p> 
