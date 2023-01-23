@@ -160,10 +160,6 @@ Articles
         font-size: .8rem;
         line-height: 1.2;
         padding-top: $--spacing-xs;
-
-        @include media-breakpoint-up(md) {
-            font-size: .8rem;
-        }
     }
 
     p {
@@ -188,10 +184,11 @@ Articles
     }
 
     .novartis__article__content__video {
-        padding-top: $--spacing-xl;
+        margin-top: $--spacing-xl;
 
         @include media-breakpoint-up(sm) {
             padding: $--spacing-l;
+            margin-top: 0;
         }
 
         @include media-breakpoint-up(md) {
