@@ -3,11 +3,15 @@
         <div class="swiper-wrapper">
             {% for item in slider.gallery %}
                 <div class="swiper-slide">
-                    <div class="swiper-image">
-                        <picture>
-                            <img loading="lazy" src="{{item.img}}">
-                        </picture>
-                    </div>
+                    {% if loop.first %}
+                        <div class="swiper-image">
+                            <picture><img loading="lazy" src="{{item.img}}"></picture>
+                        </div>
+                    {% else %}
+                        <div class="swiper-image">
+                            <picture><img class="" src="{{item.img}}"></picture>
+                        </div>
+                    {% endif %}
                     <p>{{item.title}}</p> 
                 </div>
             {% endfor %}

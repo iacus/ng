@@ -13,6 +13,8 @@
 
     .swiper-button-next, .swiper-button-prev {
         top: 45% !important;
+        width: calc(var(--swiper-navigation-size)/ 44 * 15);
+        // height: var(--swiper-navigation-size);
     }
 }
 
@@ -29,7 +31,7 @@
     }
 
     &-image {
-        height: 90vw;
+        height: 50vw;
         overflow: hidden;
         padding-bottom: $--spacing-xs;
         text-align: center;
@@ -40,9 +42,9 @@
 
         img {
             height: 100%;
-            width: 100%;
             object-position: center;
             object-fit: cover;
+            width: auto !important;
         }
     }
 
@@ -51,6 +53,8 @@
         text-align: center;
         font-size: .8rem;
     }
+
+    
 
 
 }

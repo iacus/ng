@@ -54,7 +54,6 @@ Las células T del paciente se extraen y reprograman fuera del organismo para re
     <video poster="/assets/cover-article2-2.jpg" loading="lazy" alt="{{videoAlt}}" muted preload="auto" >
         <source src="/assets/novartis-articulo2-2.mp4" type="video/mp4" >
         <source src="/assets/novartis-articulo2-2.webm" type="video/webm" >
-        <source src="/assets/novartis-articulo2-2.m4v" type="video/m4v" >
         Your browser does not support the video tag.
     </video> 
     {% include "playerbtn.njk" %}
