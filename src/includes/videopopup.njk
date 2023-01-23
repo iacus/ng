@@ -8,7 +8,7 @@
     <div class="novartis-videopopup--content">
                 {% for item in cases.people %}
                 <div data-id="{{loop.index}}" class="novartis-videopopup--video novartis__video">
-                    <video poster="{{item.videoCover}}" muted alt="Vídeo {{item.title}} {{item.subtitle}}" preload="auto" >
+                    <video poster="{{item.videoCover}}" loading="lazy" muted alt="Vídeo {{item.title}} {{item.subtitle}}" preload="none" >
                         <source src="{{item.videoMp4}}" type="video/mp4" >
                         <source src="{{item.videoWebm}}" type="video/webm" >
                         <source src="{{item.videoM4v}}" type="video/m4v" >

@@ -5,12 +5,17 @@ Articles
 .novartis__articles {
     width: 100vw;
     min-height: max-content;
-    background-image: url('/assets/bg-opaque.jpg');
+    background-image: url('../assets/bg-opaque.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     margin-top: -.53rem;
+    background-position: 29%;
+
+    @include media-breakpoint-up(md) {
+        background-position: 100%;
+    }
 }
 
 .novartis__articles__content {
@@ -72,19 +77,19 @@ Articles
     overflow: hidden;
 } 
 .thumb-one {
-    background-image: url('/assets/novartis-article1.jpg');
+    background-image: url('../assets/novartis-article1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .thumb-two {
-    background-image: url('/assets/novartis-article2.jpg');
+    background-image: url('../assets/novartis-article2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .thumb-three {
-    background-image: url('/assets/novartis-article3.jpg');
+    background-image: url('../assets/novartis-article3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -1,11 +1,33 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const pluginSvgSprite = require("eleventy-plugin-svg-sprite");
+const Image = require("@11ty/eleventy-img");
 const markdownIt = require('markdown-it')
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const shortcodes = require('./utils/shortcodes.js')
+
+
+async function imageShortcode(src, klass, alt, sizes, lazzy) {
+    let metadata = await Image(src, {
+        // widths: [300, 600, 1000, 1500],
+        formats: ["webp", "jpeg"],
+        outputDir: "./dist/assets",
+        urlPath: "assets/",
+        useCache: true
+    });
+
+    let imageAttributes = {
+        class: klass,
+        alt,
+        sizes,
+        loading: lazzy,
+        decoding: "async",
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function (config) {
     // Plugins
@@ -15,6 +37,7 @@ module.exports = function (config) {
         path: "./src/assets/icons",
         svgSpriteShortcode: "iconsprite"
     })
+    config.addNunjucksAsyncShortcode("image", imageShortcode);
 
     // Filters
     Object.keys(filters).forEach((filterName) => {
@@ -53,7 +76,7 @@ module.exports = function (config) {
     config.addPassthroughCopy({'src/assets/images':'assets/'})
     config.addPassthroughCopy({'src/assets/videos':'assets/'})
     config.addPassthroughCopy('src/assets/fonts')
-    config.addPassthroughCopy({'src/assets/scripts/js':'assets/scripts'})
+    config.addPassthroughCopy({'src/assets/scripts/js':'js'})
 
     // Deep-Merge
     config.setDataDeepMerge(true)

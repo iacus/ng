@@ -2,10 +2,7 @@
     {% for item in cases.people %}
         <article data-video="{{loop.index}}" class="novartis__cases__col">
             <div class="novartis__cases__avatar">
-                <picture alt="{{item.title}}{{item.subtitle}}">
-                    {# <source srcset="../assets/images/laura.webp" type="image/webp" loading="lazy"> #}
-                    <img src="{{item.img}}" loading="lazy" >
-                </picture>
+                {% image "./src/assets/images/"+item.img|safe , "img-fit", item.title, "(min-width: 30em) 50vw, 100vw" , "lazy" %}
             </div>
             <div class="novartis__cases__name"><h2>{{item.title}}</h2><p>{{item.subtitle}}</p></div>
             <div class="novartis__cases__bio">

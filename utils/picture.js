@@ -1,6 +1,5 @@
 // Generate an picture tag with image src URLs which use Neltify image transforms
 
-// Lazy sourceset in TEST
 module.exports = (url, alt = "Missing alt text",picClass,lazy = false) => {
     if (lazy !== 'lazy') {
       return `<picture class="${picClass}">

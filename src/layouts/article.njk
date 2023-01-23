@@ -1,5 +1,6 @@
 ---
 layout: base
+permalink: "{{url}}"
 ---
 
 <div class="novartis__wrapper">
@@ -19,7 +20,7 @@ layout: base
     </section>
         {% if videoMp4  %}
             <section class="novartis__article__header__video novartis__video">
-                    <video poster="{{videoCover}}" loading="lazy" alt="{{videoAlt}}" muted preload="auto" >
+                    <video poster="{{videoCover}}" loading="lazy" alt="{{videoAlt}}" muted preload="none" >
                         <source src="{{videoMp4}}" type="video/mp4" >
                         <source src="{{videoWebm}}" type="video/webm" >
                         Your browser does not support the video tag.
@@ -29,9 +30,7 @@ layout: base
         {% endif %}
         {% if heroImage %}
             <section class="novartis__article__header__image">
-                <picture>
-                    <img src="{{heroImage}}" alt="{{heroImageAlt}}">
-                </picture>
+                {% image "./src/assets/images/"+heroImage|safe , "img-fit", heroImageAlt, "(min-width: 30em) 50vw, 100vw" , "lazy" %}
             </section>
         {% endif %}
         <article class="novartis__article__content novartis__container">

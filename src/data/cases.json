@@ -3,28 +3,28 @@
     {
       "title": "Jose María",
       "subtitle": "Terapia Celular",
-      "img": "/assets/novartis-jose-maria.jpg",
-      "videoMp4": "/assets/novartis_jose-maria.mp4",
-      "videoWebm": "/assets/novartis_jose-maria.webm",
-      "videoCover": "/assets/novartis_15.jpg",
+      "img": "novartis-jose-maria.jpg",
+      "videoMp4": "assets/novartis_jose-maria.mp4",
+      "videoWebm": "assets/novartis_jose-maria.webm",
+      "videoCover": "assets/novartis_15.jpg",
       "text": "José María es un niño de diez años nacido con Síndrome de Down. En mayo de 2016 le diagnostican leucemia linfoblástica aguda, un tipo de cáncer potencialmente mortal que afecta a la sangre y la médula ósea. Un innovador ensayo clínico, basado en la terapia celular individualizada, permite dotarle de sus propias defensas para combatir la enfermedad."
     },
     {
       "title": "Noa",
       "subtitle": "Terapia Génica",
-      "img": "/assets/novartis-noa.jpg",
-      "videoMp4": "/assets/novartis_noa.mp4",
-      "videoWebm": "/assets/novartis_noa.webm",
-      "videoCover": "/assets/novartis_08.jpg",
+      "img": "novartis-noa.jpg",
+      "videoMp4": "assets/novartis_noa.mp4",
+      "videoWebm": "assets/novartis_noa.webm",
+      "videoCover": "assets/novartis_08.jpg",
       "text": "Noa es una niña de 13 años nacida con una distrofia hereditaria de la retina, una enfermedad que provoca la pérdida progresiva y severa de la visión. Una revolucionaria terapia génica, consistente en reemplazar el gen mutado o afectado por una copia funcional, permite no sólo frenar el avance degenerativo, sino mejorar su visión central y periférica."
     },
     {
       "title": "Alberto",
       "subtitle": "Tecnología y Prevención",
-      "img": "/assets/novartis-alberto.jpg",
-      "videoMp4": "/assets/novartis_alberto.mp4",
-      "videoWebm": "/assets/novartis_alberto.webm",
-      "videoCover": "/assets/novartis_02.jpg",
+      "img": "novartis-alberto.jpg",
+      "videoMp4": "assets/novartis_alberto.mp4",
+      "videoWebm": "assets/novartis_alberto.webm",
+      "videoCover": "assets/novartis_02.jpg",
       "text": "Alberto ha enfrentado y superado el melanoma, el tipo más grave de cáncer de piel, hasta en tres ocasiones. Una enfermedad compleja para la cual resulta fundamental una detección precoz de la misma. La revolución tecnológica y digital actual permite, no sólo personalizar aún más los tratamientos o terapias, sino también llevar a cabo una mejor prevención."
     }]
 }
