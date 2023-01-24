@@ -5,17 +5,9 @@ Articles
 .novartis__articles {
     width: 100%;
     min-height: max-content;
-    background-image: url('../assets/bg-opaque.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
     margin-top: -.53rem;
-    background-position: 29%;
-
-    @include media-breakpoint-up(md) {
-        background-position: 100%;
-    }
+    background-color: $black;
 }
 
 .novartis__articles__content {
@@ -25,11 +17,11 @@ Articles
 }
 
 .novartis__articles__content--logo {
-    width: 12.5rem;
+    width: 15.5rem;
     margin-left: 50%;
     padding-top: $--spacing-xl;
-    padding-bottom: $--spacing-m;
-    transform: translate(-50%)
+    padding-bottom: $--spacing-l;
+    transform: translate(-50%);
 }
 
 .novartis__articles__content--logo img {
